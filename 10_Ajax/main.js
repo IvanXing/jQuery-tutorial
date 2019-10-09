@@ -6,7 +6,7 @@ $.ajax('https://api.github.com/users/PraiseSunAsh').done(function (data) {
 // 抓取信息并渲染到html中
 var username;
 $('#search').on('submit', function (e) {
-    e.preventDefault();
+    e.preventDefault();   // form回车会有默认事件刷新 阻止浏览器默认操作
     username = $('#username').val();
     $.ajax('https://api.github.com/users/'+username).done(function(data){
         var html = '<div>用户名：'+data.login+'</div>'+'<div>介绍:'+(data.bio||'无个人信息')+'</div>';

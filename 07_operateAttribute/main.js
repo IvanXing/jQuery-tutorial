@@ -3,7 +3,7 @@
 // document.getElementById("a").setAttribute("href","https://www.baidu.com"); 
 // jquery写法
 $('#a').attr('href', 'https://www.baidu.com');
-//当传一个值进去的时候。会返回这个属性的value
+//获取值，会返回这个属性的value
 var tmp = $('#a').attr('href');
 console.log(tmp);
 //*更改元素内容*/
@@ -11,3 +11,10 @@ console.log(tmp);
 $('#b').text('哈啊哈哈哈哈');
 //移除属性 
 $("#c").removeAttr('class');//打开元素审查  会发现class属性消失了
+
+
+
+
+console.dir()
+    //attr 修改显性属性
+    //prop 修改隐性属性

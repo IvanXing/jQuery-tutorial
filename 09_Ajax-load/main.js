@@ -15,12 +15,15 @@ $('#button').on('click', function () {
  /* 性能优化 */
  /* 对加载的状态进行判断，如果没有加载，则进行加载
     否则直接切换属性的状态*/
+
+    // 加载过则不再加载  load机遇ajax
+
 var loaded = false;
 $('#haha').on('click', function () {
     if($('#card').is(':visible')){
         $('#card').slideUp();
     }else{
-        if(!loaded){ $('#card').load('card.html');
+        if(!loaded){ $('#card').load('card.html');   // 点击才去加载card.html ajax
         loaded = true;
     }      
         $('#card').slideDown();

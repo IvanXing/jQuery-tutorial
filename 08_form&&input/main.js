@@ -1,7 +1,7 @@
-//setVal和getVal
+//setVal和getVal   val可以获取以及设置值
 console.log($('#nickname').val());
 $('#ta').val("岂因祸福避趋之");
-//光标默认放到指定元素上
+//光标默认放到指定元素上  一开始就选中了  select
 $('#tb').focus();
 //当光标放到指定元素上的时候，会发生的event
 $('#tc').focus(function () { 
